@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.home-wrap{
+	padding: 20px;
+	
+}
+.content-login{
+	width: 100%;
+}
+.login-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.login-image{
+	max-width: 500px;
+	height: 500px;
+}
+.login-image img{
+	width: 100%;
+	height: auto;
+}
+.txtRegister {
+	border-bottom: 5px solid #6c63ff;
+	display: block;
+	width: 30%;
+	font-weight: bold;
+	color: #6c63ff;
+	text-align: center;
+}
+.login-content{
+	width: 100%;
+	background-color: #fff;
+	border-radius: 6px;
+}

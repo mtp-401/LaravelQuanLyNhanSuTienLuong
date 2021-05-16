@@ -1,0 +1,144 @@
+.sidebar{
+	background: #2F323A;
+	margin: 0px;
+	position: fixed;
+	left: 0;
+	width: 240px;
+	height: 100vh;
+	overflow: hidden;
+	transition: 0.5s;
+	transition-property: left;
+	/* transition-property: overflow-y; */
+}
+.sidebar:hover{
+	overflow-y: scroll;
+}
+.sidebar .profile_image{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+.sidebar h4{
+	color: #ccc;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.sidebar a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+.sidebar ul{
+	position: static;
+	display: none;
+}
+.sidebar ul li{
+	padding-left: 30px;
+	
+}
+.sidebar ul li a{
+	font-size: 14px;
+	line-height: 50px !important;
+	
+}
+ul li a span{
+	transition: transform 0.4s;
+}
+ul .feat-show.show{
+	display: block;
+}
+ul .feat-show1.show{
+	display: block;
+}
+ul .feat-show2.show{
+	display: block;
+	margin-bottom: 100px;
+}
+ul .feat-showluong.show{
+	display: block;
+}
+ul li a span.rotate{
+	transform: translateY(-50%) rotate(-180deg);
+}
+.sidebar a:hover{
+	background: #19B3D3;
+}
+
+.sidebar i{
+	padding-right: 10px;
+}
+
+
+
+
+#check:checked ~ .sidebar{
+	left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+	display: none;
+}
+
+#check:checked ~ .sidebar a{
+	font-size: 20px;
+	margin-left: 170px;
+	width: 80px;
+}
+.content{
+	margin-left: 240px;
+	transition: 0.5s;
+	transition-property: margin-left;
+}
+#check:checked ~ .sidebar .feat-show{
+	display: none;
+}
+
+#check:checked ~ .sidebar .feat-show1{
+	display: none;
+}
+
+#check:checked ~ .sidebar .feat-show2{
+	display: none;
+}
+
+#check:checked ~ .sidebar li{
+	text-align: center;
+}
+
+#check:checked ~ .content{
+	margin-left: 50px;
+}
+#check{
+	display: none;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	/* border-radius: 10px; */
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #d6adad;
+}
+
+.li-final{
+	margin-bottom: 140px;
+}

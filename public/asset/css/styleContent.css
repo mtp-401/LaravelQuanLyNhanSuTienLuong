@@ -1,0 +1,136 @@
+tr td{
+	font-size: 14px;
+}
+.ten-chuc-vu-qua-trinh-cong-tac{
+	width: 100px;
+}
+.activeRender{
+	display: none;
+}
+.HienHopDong{
+	display: none;
+}
+table{
+	width: 100%;
+}
+.mini{
+	font-size: 10px;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
+  th, td {
+	padding: 5px;
+	text-align: center;    
+  }
+.HienQTCongTac{
+	display: none;
+}
+.content-table{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.table-name h3{
+	color: #0c8ba5;
+}
+.bg-btn{
+	background-color: #40a9ff;
+	color: white;
+	font-weight: bold;
+}
+
+.bg-btn:hover{
+	color: white;
+	background-color: #2193f0;
+}
+
+/* quan lý thông tin nhân sự */
+
+.account-settings .user-profile {
+	margin: 0 0 1rem 0;
+	padding-bottom: 1rem;
+}
+.account-settings .user-profile .user-avatar {
+	margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+	width: 130px;
+	height: 130px;
+	border-radius: 2px;
+}
+.account-settings .user-profile h5.user-name {
+	margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+	margin: 0;
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+.account-settings .about {
+	margin: 1rem 0 0 0;
+	font-size: 0.8rem;
+	text-align: center;
+}
+.card {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 0;
+	z-index: -1;
+}
+.row{
+	margin-right: 0;
+   margin-left: 0;
+}
+.card-body{
+	text-align: center;
+}
+.form-control {
+	border: 1px solid #596280;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: .825rem;
+	color: #000000;
+}
+.groud{
+	float: left;
+}
+
+/* quản lý hợp đồng */
+
+.rounded-lg {
+	border-radius: 1rem !important;
+}
+.text-small {
+	font-size: 0.9rem !important;
+}
+.custom-separator {
+	width: 10rem;
+	height: 6px;
+	border-radius: 1rem;
+}
+
+.text-uppercase {
+	letter-spacing: 0.2em;
+}
+
+/* quản lý khen thưởng - kỷ luật */
+
+.rounded-lg {
+	border-radius: 1rem !important;
+}
+.text-small {
+	font-size: 0.9rem !important;
+}
+.custom-separator {
+	width: 10rem;
+	height: 6px;
+	border-radius: 1rem;
+}
+
+.text-uppercase {
+	letter-spacing: 0.2em;
+}
