@@ -63,12 +63,12 @@
     <div class="p-5 mb-2"></div>
     
    <!-- ky luat -->
-   <h1 class="mb-4 text-danger">Nhập thông tin kỹ luật</h1>
+   <h1 class="mb-4 text-danger">Nhập thông tin kỷ luật</h1>
     <form action="/runKyLuat" method="POST">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="form-row">
         <div class="form-group col-md-4">
-            <label for="makyluat">Mã Kỹ Luật</label>
+            <label for="makyluat">Mã Kỷ Luật</label>
             <input type="text" class="form-control" id="makyluat" name = "makyluat" >
          </div>
         <div class="form-group col-md-4">
@@ -89,7 +89,7 @@
             </select>
         </div>
         <div class="form-group col-md-4">
-        <label for="ngaykyluat">Ngày Kỹ Luật</label>
+        <label for="ngaykyluat">Ngày Kỷ Luật</label>
             <input type="date" class="form-control" id="ngaykyluat" name = "ngaykyluat" required>
         </div>
     </div>
@@ -99,12 +99,12 @@
             <input type="text" class="form-control" id="tienphat" name = "tienphat" value='0'>
         </div>
         <div class="form-group col-md-4">
-            <label for="lydo">Lý Do Kỹ Luật(nếu có)</label>
+            <label for="lydo">Lý Do Kỷ Luật(nếu có)</label>
             <input type="text" class="form-control" id="lydo" name = "lydo" value=''>
         </div>
     </div>
     <div class="form-row">
-        <button type="submit" class="btn btn-danger">Thêm Kỹ Luật</button>
+        <button type="submit" class="btn btn-danger">Thêm Kỷ Luật</button>
         <a href="/quan-ly-khen-thuong-ky-luat" class="btn btn-outline-secondary ml-3">Hủy thao tác</a> 
    </div>
     </form>

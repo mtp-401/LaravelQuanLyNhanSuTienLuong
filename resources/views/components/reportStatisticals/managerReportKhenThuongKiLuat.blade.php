@@ -12,10 +12,10 @@
 		</div>
 		<b>Choose:</b>
 		<div class="table-btn col-md-4">
-			<a href="/Xuat-bao-cao-thong-ke-khen-thuong" class="btn btn-info">Xuất D.sách nhân viên được khen thưởng</a>
+			<a href="/Xuat-bao-cao-thong-ke-khen-thuong" class="btn btn-info">Xuất danh sách nhân viên được khen thưởng</a>
 		</div>
 		<div class="table-btn col-md-4">
-			<a href='/Xuat-bao-cao-thong-ke-ki-luat' class="btn btn-danger" >Xuất danh sách nhân viên bị kỹ luật</a>
+			<a href='/Xuat-bao-cao-thong-ke-ki-luat' class="btn btn-danger" >Xuất danh sách nhân viên bị kỷ luật</a>
 		</div>
 	</div>
 	<div class="content-table">

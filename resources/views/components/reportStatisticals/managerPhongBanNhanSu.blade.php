@@ -41,7 +41,7 @@ if($noti == 'xoathanhcong'){
 			@php 
 				$ok = rand(1 , 5 );
 				if($ok == 1){
-				$linkImg = 'https://img.timviec.com.vn/2020/05/teamwork-la-gi-1.jpg';
+				$linkImg = 'https://www.pngkit.com/png/detail/106-1061978_teamwork-png-download-teamwork-listen.png';
 				}
 				if($ok == 2){
 				$linkImg = 'https://nextit.vn/wp-content/uploads/2020/10/The-Modern-Rules-for-Teamwork-in-the-Workplace.png';
@@ -53,7 +53,7 @@ if($noti == 'xoathanhcong'){
 				$linkImg = 'https://www.testcenter.vn/blog/wp-content/uploads/2021/01/68.jpg';
 				}
 				if($ok == 5){
-				$linkImg = 'https://thainguyen.city/bl-content/uploads/pages/b868c3dc075062b6d00fd618bcc162c4/tuyen-dung-cong-chuc.jpg';
+				$linkImg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4dSqCGRG9MWrH4FArC7FDk-8NkbN0DuSPuakYSraZAJacxq6BxeG7VeQ2yn9wv7ctPk&usqp=CAU';
 				}
 			@endphp
 				<img style="width: 300px ; height:250px;" src="{{$linkImg}}" alt="Card image cap">

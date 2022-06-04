@@ -2,7 +2,7 @@
 @section('contentSidebar')
 <div class="m-5 auto">
     <a href="/quan-ly-hop-dong" class="btn btn-outline-secondary">< Quay lại</a> 
-    <h1 class="mb-4 text-info">Chập nhật thông tin loại hợp đồng</h1>
+    <h1 class="mb-4 text-info">Cập nhật thông tin loại hợp đồng</h1>
     <form action="/runChinhSuaLoaiHopDong" method="POST">
     @foreach($hopdong as $item)
     <input type="hidden" name="_token" value="{{ csrf_token() }}">

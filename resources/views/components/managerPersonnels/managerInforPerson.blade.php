@@ -79,10 +79,10 @@ if($noti == 'false'){
 						@php
 							if(Session::get('user')['role_id'] == 1){
 						@endphp
-						<a href="/chuyen-nghi-viec-thoi-viec/{{ $item->manv }}" class="btn btn-dark" title="Nhỉ việc, thôi việc{{$item->hoten}}">
+						<a href="/chuyen-nghi-viec-thoi-viec/{{ $item->manv }}" class="btn btn-dark" title="Nghỉ việc, thôi việc{{$item->hoten}}">
 							<i class="fas fa-book-dead"></i>
 						</a> 
-						<a href="/edit-nhan-su/{{ $item->manv }}" class="btn btn-warning" title="sữa thông tin {{$item->hoten}}">
+						<a href="/edit-nhan-su/{{ $item->manv }}" class="btn btn-warning" title="sửa thông tin {{$item->hoten}}">
 							<i class="fa fa-pencil"></i> 
 						</a> 
 						<a href="/delete-nhan-su/{{ $item->manv }}"  class="btn btn-danger delete-product" title="xóa nhân viên {{$item->hoten}}">

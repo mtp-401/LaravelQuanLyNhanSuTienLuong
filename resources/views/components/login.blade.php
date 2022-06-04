@@ -29,7 +29,7 @@
 				<div class="row content-login">
 					<div class="col-md-6">
 						<div class="login-image">
-							<img src="https://marketing.azurecloud.vn/images/undraw_remotely_2j6y.svg" alt="logo">
+							<img src="https://res.cloudinary.com/gr3atcode/image/upload/v1646835839/logo_G_4x_duwozn.png" alt="logo">
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -95,7 +95,7 @@
 							if(data === "sai"){
 								$(".notifyLogin").html("Thông tin đăng không chính xác")
 							}else{
-								window.location.href = "{{url("/trang-chu")}}"
+								window.location.href = "{{url("/quan-ly-nhan-su")}}"
 							}
 						}
 					});

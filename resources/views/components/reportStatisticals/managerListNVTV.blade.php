@@ -3,13 +3,13 @@
 <div class="content-info-nhan-su">
 	<div class="content-table mb-5">
 		<div class="table-name">
-			<h3>Danh Sách thông tin nhân sự nghỉ việc - thôi việc</h3>
+			<h3>Danh sách thông tin nhân sự nghỉ việc - thôi việc</h3>
 		</div>
     </div>
 </div>
 <div class="form-row m-3 auto">
     <div class="form-group col-md-4">
-        <a href="/Xuat-bao-cao-thong-ke-nghi-viec-thoi-viec" type="button" class="btn btn-primary">Xuất Danh Sách Nhân Viên Nhỉ Việc Thôi Việc</a>
+        <a href="/Xuat-bao-cao-thong-ke-nghi-viec-thoi-viec" type="button" class="btn btn-primary">Xuất Danh Sách Nhân Viên Nghỉ Việc Thôi Việc</a>
     </div>
     <div>
         <input type="text" id="myInput"  class="form-control mr-1 groud" style="width: 300px; " placeholder="nhập mã nhân viên muốn tìm.." onkeyup="search(this.value)">
@@ -27,7 +27,7 @@
 				<th scope="col">Ngày sinh</th>
 				<th scope="col">Giới tính</th>
 				<th scope="col">Email</th>
-				<th scope="col">SDT</th>
+				<th scope="col">SĐT</th>
                 <th scope="col">Ngày Xin Nghỉ</th>
 			</tr>
 		</thead>

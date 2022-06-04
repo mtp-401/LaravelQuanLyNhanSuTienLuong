@@ -41,7 +41,7 @@
 					<td>{{$item->tienthuong}}</td>
 					<td>{{$item->ngayhuongchedo}}</td>
 					<td>
-						<a href="/edit-product/" class="btn btn-info" title="sữa thông tin">
+						<a href="/edit-product/" class="btn btn-info" title="sửa thông tin">
 							<i class="fa fa-pencil"></i> 
 						</a> 
 						<button class="btn btn-danger delete-product" title="xóa nhân viên">

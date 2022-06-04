@@ -2,7 +2,7 @@
 @section('contentSidebar')
 <div class="m-5 auto">
     <a href="/quan-ly-nhan-su" class="btn btn-light">< Quay lại</a>
-    <h1 class="mb-4 text-warning">Chỉnh Sửa thông tin nhân viên</h1>
+    <h1 class="mb-4 text-warning">Chỉnh sửa thông tin nhân viên</h1>
     @foreach ($infoPersonnels as $item)
     <form action="/runEditPerson" method="POST">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">

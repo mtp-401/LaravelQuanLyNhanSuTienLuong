@@ -1,8 +1,7 @@
 <input type="checkbox" id="check" >
 <header style="z-index: 99;">
 	<div class="left_area">
-		<div><img src="{{ asset('asset/img/logo_web_second.png') }}" alt=""></div>
-		<h3 style="display: inline-block">Quản lý <span>nhân sự-tiền lương</span></h3>
+		<h3 style="display: inline-block">Hệ thống quản lý nhân sự <span> tập đoàn Ado</span></h3>
 		<label for="check">
 			<i class="fas fa-bars" id="sidebar_btn"></i>
 		</label>

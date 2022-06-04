@@ -7,7 +7,7 @@
 		<meta name="description" content="Quản lý nhân sự">
 		<meta name="csrf-token" content="{{csrf_token()}}">
 
-      <title>Quản lý nhân sự-tiền lương</title>
+      <title>HỆ THỐNG QUẢN LÝ NHÂN SỰ TẬP ĐOÀN ADO</title>
 	
 		<link rel="shortcut icon" href="{{ asset('asset/img/logo_icon.png') }}" />
 		<link 
@@ -30,9 +30,7 @@
 		{{View::make('components.sidebar')}}
 
 		@yield('content')
-
 		@yield('script')
-		
 		<script>
 			$('.feat-btn').click(function(){
 				$('ul .feat-show').toggleClass("show");

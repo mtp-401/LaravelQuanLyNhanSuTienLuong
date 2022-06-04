@@ -3,7 +3,7 @@
 <div class="content-info-nhan-su">
 	<div class="content-table mb-5">
 		<div class="table-name">
-			<h3>Danh Sách thông tin nhân sự</h3>
+			<h3>Danh sách nhân sự</h3>
 		</div>
 		@foreach ($managerReportListPerson as $item)
             @php
@@ -39,11 +39,11 @@
            
         var data = google.visualization.arrayToDataTable([
             ["Element", "Density", { role: "style" } ],
-            ["Tổng", tong, "#66ff33"],
-            ["Nam", nam, "#ff3333"],
-            ["Nữ", nu, "gold"],
-            [">= Đại học ", daihoc, "color: #0000cc"],
-            ["< Đại học", conlai, "color: #ff33cc"]
+            ["Tổng", tong, "#8B0000"],
+            ["Nam", nam, "#6A5ACD"],
+            ["Nữ", nu, "#DB7093"],
+            [">= Đại học ", daihoc, "color: #58d3a4"],
+            ["< Đại học", conlai, "color: #e4d465"]
         ]);
 
         var view = new google.visualization.DataView(data);
@@ -55,17 +55,17 @@
                         2]);
 
         var options = {
-            title: "BIỂU ĐỒ TỔNG QUAN NHÂN SỰ VIETCONNECTION",
+            title: "BIỂU ĐỒ TỔNG QUAN NHÂN SỰ ADOGROUP",
             width: 600,
             height: 400,
-            bar: {groupWidth: "95%"},
+            bar: {groupWidth: "70%"},
             legend: { position: "none" },
         };
         var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
         chart.draw(view, options);
     }
     </script>
-    <div id="columnchart_values" style="width: 900px; height: 300px;  z-index: -1; margin-bottom: 20px;"></div>
+    <div id="columnchart_values" style="width: 900px; height: 500px;  z-index: 1; margin-bottom: -150px; margin-top: 10px"></div>
     <!-- end chart -->
 </div>
 <div class="form-row m-3 auto">

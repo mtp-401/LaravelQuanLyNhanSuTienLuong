@@ -3,13 +3,13 @@
 
 <div class="m-5 auto">
     <a href="/quan-ly-khen-thuong-ky-luat" class="btn btn-outline-secondary">< Quay lại</a> 
-    <h1 class="mb-4 text-danger">Cập nhật thông tin kỹ luật</h1>
+    <h1 class="mb-4 text-danger">Cập nhật thông tin kỷ luật</h1>
     @foreach ($data as $item)
     <form action="/runUpdateKyLuat" method="POST">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="form-row">
         <div class="form-group col-md-4">
-            <label for="makiluat">Mã Kỹ luật</label>
+            <label for="makiluat">Mã Kỷ luật</label>
             <input type="hidden" class="form-control" id="makiluat"  name = "makiluat" value='{{$item->makiluat}}'>
             
             <input type="text" class="form-control"  value='{{$item->makiluat}}'>
@@ -39,13 +39,13 @@
             </select>
         </div>
         <div class="form-group col-md-4">
-        <label for="ngaykiluat">Ngày Khen Thưởng</label>
+        <label for="ngaykiluat">Ngày Kỷ Luật</label>
             <input type="date" class="form-control" id="ngaykiluat" name = "ngaykiluat" value="{{$item->ngaykiluat}}">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-4">
-            <label for="tienkiluat">Tiền Thưởng [VNĐ](nếu có)</label>
+            <label for="tienkiluat">Tiền Phạt [VNĐ](nếu có)</label>
             <input type="text" class="form-control" id="tienkiluat" name = "tienkiluat" value={{$item->tienkiluat}}>
         </div>
         <div class="form-group col-md-4">

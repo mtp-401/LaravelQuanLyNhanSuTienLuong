@@ -1,5 +1,7 @@
 @extends('master')
 @section('contentSidebar')
+<!-- 
+button -->
 <div class="content-info-nhan-su">
 	<div class="content-table">
 		<div class="table-name">
@@ -12,30 +14,35 @@
 		</div>
 		<b>SortBy:</b>
 		<div class="table-btn col-md-4">
-			<button class="btn btn-info" id="khenthuong" onclick="searchKhenThuong(this.value)">danh sách nhân viên được khen thưởng</button>
+			<button class="btn btn-info" id="khenthuong" onclick="searchKhenThuong(this.value)">Danh sách nhân viên được khen thưởng</button>
 		</div>
 		<div class="table-btn col-md-4">
-			<button class="btn btn-danger" id="kyluat" onclick="searchKyLuat(this.value)">danh sách nhân viên bị kỹ luật</button>
+			<button class="btn btn-danger" id="kyluat" onclick="searchKyLuat(this.value)">Danh sách nhân viên bị kỷ luật</button>
 		</div>
 	</div>
+
+	<!-- search -->
 	<div class="content-table">
 		<div class="table-btn col-md-4">
 			<input type="text" id="myInput"  class="form-control groud" style="width: 300px; " placeholder="nhập mã nhân viên muốn tìm.." onkeyup="search(this.value)">
 		</div>
+
+	<!-- add	 -->
 		<div class="table-btn col-md-4">
 		@php
 			if(Session::get('user')['role_id'] == 1){
 		@endphp
-			<a  href="/them-khen-thuong" class="btn btn-warning">Thêm Khen thưởng / Kỹ luật</a>
+			<a  href="/them-khen-thuong" class="btn btn-warning">Thêm Khen thưởng / Kỷ luật</a>
 		@php
 			}
 		@endphp
 		</div>
 	</div>
+	<!-- th tag defines a header cell  -->
 	<table class="table" id="table">
 		<thead class="thead-dark">
 			<tr>
-				<th scope="col">Mã nhân viên</th>
+				<th scope="col">Mã nhân viên</th>   
 				<th scope="col">Tên nhân viên</th>
 				<th scope="col">Chức vụ</th>
 				<th scope="col">Phòng ban</th>
@@ -46,6 +53,8 @@
 				<th scope="col">Action </th>
 			</tr>
 		</thead>
+
+		<!-- delete,update,error -->
 		<tbody>
 		@php 
 			if($respon == 'xoathanhcong'){
@@ -69,18 +78,18 @@
 				</script>
 				@php 
 			}
-
-        $listKhenThuong = \DB::table('thongtinnhanvien')
+			
+        $listKhenThuong = \DB::table('thongtinnhanvien') 
 		->join('khenthuong', 'khenthuong.manhanvien', '=', 'thongtinnhanvien.manv')
        	->join('chitietkhenthuong', 'chitietkhenthuong.machitietkhenthuong', '=', 'khenthuong.machitietkhenthuong')
         ->join('phongban', 'phongban.maphongban', '=', 'thongtinnhanvien.maphongban')
         ->join('chucvu', 'chucvu.machucvu', '=', 'thongtinnhanvien.machucvu')
         ->join('trinhdo', 'trinhdo.matrinhdo', '=', 'thongtinnhanvien.matrinhdo')
         ->where('thongtinnhanvien.nghiviecthoiviec', '=', '1')
-		->get();
+		->get(); 
 			foreach($listKhenThuong as $item){
             @endphp
-				<tr>
+				<tr> 
 					<td scope="row"  class="font-weight-bold">{{$item->manv}}</td>
 					<td>{{$item->hoten}}</td>
 					<td>{{$item->tenchucvu}}</td>
@@ -124,7 +133,7 @@
 					<td>{{$item->hoten}}</td>
 					<td>{{$item->tenchucvu}}</td>
 					<td>{{$item->tenphongban}}</td>
-					<td>Kỹ luật</td>
+					<td>Kỷ luật</td>
 					<td style=" width: 150px;">{{$item->tenkiluat}}</td>
 					<td>{{number_format($item->tienkiluat, 0, '', ',')}} đ</td>
 					<td>{{date('d-m-Y', strtotime($item->ngaykiluat))}}</td>
@@ -132,7 +141,7 @@
 					@php
 						if(Session::get('user')['role_id'] == 1){
 					@endphp
-						<a href="/update-ky-luat/{{ $item->makiluat }}" class="btn btn-info" title="sửa thông tin kỹ luật">
+						<a href="/update-ky-luat/{{ $item->makiluat }}" class="btn btn-info" title="sửa thông tin kỷ luật">
 							<i class="fa fa-pencil"></i> 
 						</a>
 						<a href="/delete-ky-luat/{{ $item->makiluat }}" class="btn btn-danger delete-product" title="xóa {{ $item->makiluat }}">
@@ -155,16 +164,16 @@
 
 @section('script')
 <script>
-function searchKyLuat(val) {
+function searchKyLuat(val) { //sortedBy
   // Declare variables
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
-  input = 'Khen';
-  filter = 'KỸ LUẬT';
-  table = document.getElementById("table");
-  tr = table.getElementsByTagName("tr");
+  input = 'Kỷ luật';
+  filter = 'KỶ LUẬT';
+  table = document.getElementById("table"); 
+  tr = table.getElementsByTagName("tr"); //tr element defines a row in a table
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[4];
+    td = tr[i].getElementsByTagName("td")[4]; //td element defines a cell in a table - in a row when for loop run - cell 4 in the row "hinh thuc"
     if (td) {
       txtValue = td.textContent || td.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {

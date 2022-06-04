@@ -28,21 +28,6 @@
 			<li><a href="/quan-ly-hop-dong">> Danh Mục Hợp Đồng</a></li>
 		</ul>
 	</li>
-	<!-- <li> -->
-	<a href="/quan-ly-luong">
-	<i class="fas fa-money-check-alt"></i>
-		<span>Quản Lý Lương</span>
-	</a>
-	<!-- <a class="feat-btnluong">
-		<i class="fad fa-acorn"></i>
-			<span>Quản lý lương</span>
-			<span class="fas fa-caret-down firstluong" style="margin-left: 10%"></span>
-		</a>
-		<ul class="feat-showluong">
-			<li><a href="/quan-ly-bang-luong">Quản lý bảng lương</a></li>
-			<li><a href="/quan-ly-cham-cong">Quản lý chấm công</a></li>
-		</ul>
-	</li> -->
 	<li class="li-final">
 		<a class="feat-btn2">
 			<i class="fas fa-chart-line"></i>
@@ -50,8 +35,7 @@
 			<span class="fas fa-caret-down first2" style="margin-left: 10%"></span>
 		</a>
 		<ul class="feat-show2">
-			<li><a href="/bao-cao-thong-ke-danh-sach-nhan-su">D.Sách nhân sự</a></li>
-			<li><a href="/bao-cao-thong-ke-tien-luong">BCTK tiền lương</a></li>
+			<li><a href="/bao-cao-thong-ke-danh-sach-nhan-su">DS nhân sự</a></li>
 			<li><a href="/bao-cao-thong-ke-dsnv-nviec-tviec">DS NV nghỉ việc-thôi việc</a></li>
 			<li><a href="/bao-cao-thong-ke-quan-ly-khen-thuong-ky-luat">DS khen thưởng - kỉ luật </a></li>
 		</ul>

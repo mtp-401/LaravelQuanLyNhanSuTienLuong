@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6{
 	padding: 0;
 }
 header{
-	background-color: #22242A;
+	background-color: #8C0025;
 	padding: 10px 40px;
 	width: 100%;
 	position: sticky;
@@ -63,7 +63,7 @@ label #sidebar_btn{
 	position: fixed;
 	cursor: pointer;
 	top: 5%;
-	left: 420px;
+	left: 600px;
 	font-size: 20px;
 	transition: 0.5s;
 	transition-property: color;
@@ -112,7 +112,12 @@ label #sidebar_btn:hover{
 	background-color: white;
 	border-radius: 6px;
 }
-
-
+.content-home-image-center{
+	display: block;
+	margin-left: 380px;
+}
+.content-home-text-center{
+	text-align: center;
+}
 
 
